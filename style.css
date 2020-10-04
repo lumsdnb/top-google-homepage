@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end css reset */
+
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    margin-left: 25px;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin:auto;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+input {
+    border-radius: 30px;
+    border: 1px solid #dadada;
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 15px 15px 15px 25px;
+}
+
+input:hover {
+    box-shadow: 
+        0 2px 4px 0 rgba(161, 161, 161, 0.24), 
+        0 4px 7px 0 rgba(165, 165, 165, 0.19);
+}
+
+
+.nav {
+    position: fixed;
+    top: 16px;
+    display: flex;
+    align-items: baseline;
+    margin-left: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-left {
+    position: fixed;
+    left: 35px;
+    top: 0;
+}
+
+.nav-right {
+    position: fixed;
+    right: 35px;
+    top: 15;
+}
+
+.nav-el {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#login-btn {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    color: #fff;
+    border-radius: 3px;
+}
+
+#login-btn:hover {
+    background: #689df3;
+    background: -moz-linear-gradient(top,#528ef7,#6e99e2);
+}
+
+.search-btns {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+            border: 0px;
+            border-radius: 5px;
+            color: rgb(75, 75, 75);
+}
+
+.btn:hover {
+    border: 2px;
+    border-color: darkmagenta;
+    color: rgb(128, 128, 128);
+}
