@@ -60,7 +60,7 @@ table {
     height: auto;
     display:block;
     margin:auto;
-    margin-top: 120px;
+    margin-top: 150px;
     margin-bottom: 30px;
 }
 
@@ -69,7 +69,7 @@ input {
     border: 1px solid #dadada;
     display: block;
     margin: auto;
-    width: 40%;
+    width: 80%;
     padding: 15px 15px 15px 25px;
 }
 
@@ -79,16 +79,21 @@ input:hover {
         0 4px 7px 0 rgba(165, 165, 165, 0.19);
 }
 
+form {
+  margin: auto;
+  width: 270px;
+}
 
 .nav {
     position: fixed;
-    top: 16px;
+    top: 0px;
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
+    align-items: flex-start;
     margin-left: 25px;
 }
 
-.nav a {
+a {
     text-decoration: none;
     color: #000;
 }
@@ -100,18 +105,33 @@ input:hover {
 .nav-left {
     position: fixed;
     left: 35px;
-    top: 0;
+    top: 20px;
 }
 
 .nav-right {
     position: fixed;
     right: 35px;
-    top: 15;
+    top: 10px;
+
 }
 
 .nav-el {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#mobile-nav {
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(165, 165, 165, 0.19);
+  box-sizing: border-box;
+}
+
+#mobile-nav:hover {
+  background-color: rgba(165, 165, 165, 0.09);
+  border: 1px;
+  box-sizing: border-box;
+  border-style: solid;
 }
 
 #login-btn {
@@ -121,6 +141,7 @@ input:hover {
     outline: none;
     background: #4285f4;
     background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    justify-self: baseline;
     color: #fff;
     border-radius: 3px;
 }
@@ -147,3 +168,40 @@ input:hover {
     border-color: darkmagenta;
     color: rgb(128, 128, 128);
 }
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  padding: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #mobile-nav{display:block;}  /* show it on small screens */
+  #desktop-nav{display:none;}
+  form {
+    margin: auto;
+    width: 90%;
+  }
+  #logo {transform: rotate(20vw);}
+  .search-btns {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 2048px) {
+  #mobile-nav{display:none;}   /* hide it elsewhere */
+  #desktop-nav{display:block;}
+  
+}
+
